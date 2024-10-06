@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
 set -e
+echo "starting..."
 echo "Date of the day: " >> /home/user/Documents/Project1/output.txt
 date >> /home/user/Documents/Project1/output.txt
 echo "Details of S3 buckets created: " >> /home/user/Documents/Project1/output.txt
