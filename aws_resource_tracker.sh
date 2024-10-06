@@ -1,5 +1,6 @@
 #!/bin/bash
 set -x
+set -e
 echo "Date of the day: " >> /home/user/Documents/Project1/output.txt
 date >> /home/user/Documents/Project1/output.txt
 echo "Details of S3 buckets created: " >> /home/user/Documents/Project1/output.txt
@@ -9,4 +10,4 @@ aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId, Ke
 echo "Details of lambda functons created: " >> /home/user/Documents/Project1/output.txt
 aws lambda list-functions >> /home/user/Documents/Project1/output.txt
 echo "Details of iam users: " >> /home/user/Documents/Project1/output.txt
-aws iam list-users >> /home/user/Documents/Project1/output.txt
+aws iam list-users >> /home/user/Documents/Project1/output.txt 
